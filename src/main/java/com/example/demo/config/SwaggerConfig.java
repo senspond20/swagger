@@ -22,6 +22,7 @@ public class SwaggerConfig {
         .select() 
         .apis(RequestHandlerSelectors.basePackage("com.example.demo")) 
         .paths(PathSelectors.any()) 
+       // .paths(PathSelectors.ant("/v1/api/**")) // v1/api/ 인 URL만 필터링
         .build();
     //  .apiInfo(apiInfo()); 
     } 
