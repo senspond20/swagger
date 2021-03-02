@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class Test2Controller {
     
-    @GetMapping
+    @GetMapping("/go")
     public String getIndex(){
-        return "index";
+        return "/";
     }
 }
